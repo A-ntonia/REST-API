@@ -1,0 +1,24 @@
+{
+    "source": {
+        "include": ["app.js", "custom/README.md"],
+        "includePattern": "../app.js",
+        "excludepattern": "(node_modules/|docs)"
+    },
+    "plugins": ["plugins/markdown"],
+    "templates": {
+        "cleverLinks": true,
+        "monospaceLinks": true,
+        "default": {
+            "staticFiles": {
+              "include": [
+                  "client/homepage.jpg"
+              ]
+            }
+          }
+        },
+    "opts": {
+        "recurse": true,
+        "destination": "./docs/",
+        "template": "custom"
+    }
+}
